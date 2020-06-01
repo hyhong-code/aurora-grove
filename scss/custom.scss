@@ -61,6 +61,12 @@ body {
   }
 }
 
+#quotes {
+  i {
+    opacity: 0.3;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     // give a background to navbar on sm and xs screen
