@@ -7166,7 +7166,12 @@ body {
   background-color: pink; }
 
 .navbar {
-  font-weight: 100; }
+  font-weight: 100;
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0; }
   .navbar .navbar-brand > h3 {
     font-weight: 100; }
   .navbar .nav-item {
@@ -7179,10 +7184,21 @@ body {
 
 #showcase {
   background: url("../images/main.jpeg") bottom center/cover no-repeat;
-  min-height: 750px; }
+  min-height: 750px;
+  position: relative; }
+  #showcase #header {
+    z-index: 2; }
   #showcase h1 {
     font-family: "Questrial", sans-serif;
     line-height: 1; }
+  #showcase #overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; }
   #showcase #book {
     font-size: 1.5rem;
     border-radius: 2rem; }
