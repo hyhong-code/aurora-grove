@@ -37,19 +37,25 @@
       <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+            <a href="#showcase" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Explore</a>
+            <a href="#explore" class="nav-link">Explore</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#newsletter" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Book</a>
+            <a
+              href="#"
+              data-toggle="modal"
+              data-target="#myModal"
+              class="nav-link"
+              >Book</a
+            >
           </li>
         </ul>
       </div>
@@ -67,13 +73,18 @@
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi,
           velit.
         </p>
-        <button id="book" class="btn btn-lg btn-primary px-5">
+        <button
+          id="book"
+          class="btn btn-lg btn-primary px-5"
+          data-toggle="modal"
+          data-target="#myModal"
+        >
           BOOK NOW
         </button>
       </div>
     </section>
     <!-- ----------------- About ----------------- -->
-    <section>
+    <section id="about">
       <div class="container text-center mt-5">
         <h2>YOU SHOW UP, WE PITCH THE TENT.</h2>
         <div class="row">
@@ -117,7 +128,7 @@
       </div>
     </section>
     <!-- ----------------- Explore ----------------- -->
-    <section>
+    <section id="explore">
       <div class="container text-center mt-2 p-3">
         <h3>
           WE'VE CREATED A CAMPING EXPERIENCE THAT'S TURN-KEY AND HASSLE FREE
@@ -350,8 +361,8 @@
         </blockquote>
       </div>
     </section>
-    <!-- ----------------- Large Quote ----------------- -->
-    <section class="bg-dark">
+    <!-- ----------------- newsletter ----------------- -->
+    <section id="newsletter" class="bg-dark">
       <div class="container text-center text-white mt-4 py-5">
         <p class="lead">JOIN OUR NEWSLETTER FOR DEALS AND UPDATES</p>
         <div class="row justify-content-center">
@@ -381,19 +392,84 @@
           <a href="#" class="nav-link text-white">FAQ</a>
         </li>
         <li class="nav-itwm">
-          <a href="#" class="nav-link text-white">EXPERIENCE</a>
+          <a href="#explore" class="nav-link text-white">EXPERIENCE</a>
         </li>
         <li class="nav-itwm">
-          <a href="#" class="nav-link text-white">EXPLORE</a>
+          <a href="#explore" class="nav-link text-white">EXPLORE</a>
         </li>
         <li class="nav-itwm">
-          <a href="#" class="nav-link text-white">CONTACT</a>
+          <a href="#newsletter" class="nav-link text-white">CONTACT</a>
         </li>
         <li class="nav-itwm">
-          <a href="#" class="nav-link text-white">BOOK</a>
+          <a
+            href="#"
+            data-toggle="modal"
+            data-target="#myModal"
+            class="nav-link text-white"
+            >BOOK</a
+          >
         </li>
       </ul>
     </section>
+    <!-- ----------------- modal ----------------- -->
+    <div id="myModal" class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">NEW BOOKING</h5>
+            <button class="close" data-dismiss="modal" aria-label="close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat
+              quis quod cupiditate a ipsum ex eveniet, saepe enim placeat
+              minima!
+            </p>
+            <form action="">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="adults">Number of Adults</label>
+                <select id="adults" class="form-control">
+                  <option value="1">1</option>
+                  <option value="2">3</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="children">Number of Children</label>
+                <select id="children" class="form-control">
+                  <option value="1">1</option>
+                  <option value="2">3</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="request">Addtional Request</label>
+                <textarea id="request" rows="3" class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">Submit Request</button>
+            <button class="btn btn-secondary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- jQuery, Popper.js, Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
