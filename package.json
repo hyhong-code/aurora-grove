@@ -1,0 +1,23 @@
+{
+  "name": "aurora-grove",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyhong-code/aurora-grove.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyhong-code/aurora-grove/issues"
+  },
+  "homepage": "https://github.com/hyhong-code/aurora-grove#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
