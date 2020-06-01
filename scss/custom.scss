@@ -1,0 +1,41 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: pink;
+}
+
+.navbar {
+  font-weight: 100;
+
+  .navbar-brand > h3 {
+    font-weight: 100;
+  }
+
+  .nav-item {
+    font-size: 1.4rem;
+  }
+
+  .nav-link {
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      transition: border 0.3s;
+      border-bottom: 1px solid white;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    // give a background to navbar on sm and xs screen
+    background-color: #1f1f1f;
+
+    // cancel hover style
+    .nav-link {
+      border-bottom: none;
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+}
