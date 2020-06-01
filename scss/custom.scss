@@ -24,6 +24,19 @@ body {
   }
 }
 
+#showcase {
+  background: url("../images/main.jpeg") bottom center / cover no-repeat;
+  min-height: 750px;
+  h1 {
+    font-family: "Questrial", sans-serif;
+    line-height: 1;
+  }
+  #book {
+    font-size: 1.5rem;
+    border-radius: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     // give a background to navbar on sm and xs screen
@@ -36,6 +49,14 @@ body {
       &:hover {
         border-bottom: none;
       }
+    }
+  }
+
+  #showcase {
+    min-height: 500px;
+
+    h1 {
+      font-size: 4rem;
     }
   }
 }
